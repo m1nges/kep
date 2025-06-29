@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ООО "КЭП" - Грузоперевозки по России | Более 10 лет на рынке</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <div class="logo">
+          <h1><span>ООО "КЭП"</span></h1>
+          <p>Грузоперевозки по России с 2013 года</p>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#calculator">Расчет стоимости</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+          <div class="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+          </div>
+        </nav>
+        <div class="phone">
+          <a href="tel:+78001234567"><i class="fas fa-phone"></i> 8 (800) 123-45-67</a>
+        </div>
+      </div>
+      <div class="header-content">
+        <h1>Профессиональные грузоперевозки по всей России</h1>
+        <p class="subtitle">Надежные и безопасные перевозки грузов любого объема с 2013 года</p>
+        <div class="header-features">
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Гарантия сохранности груза</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Собственный автопарк 150+ машин</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Круглосуточная поддержка</span>
+          </div>
+        </div>
+        <div class="header-buttons">
+          <button class="btn btn-primary" id="header-btn">Заказать перевозку</button>
+          <button class="btn btn-secondary">Подробнее об услугах</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-truck"></i></div>
+          <h3>Перевозка сборных грузов</h3>
+          <p>Экономичная доставка небольших партий груза с консолидацией</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-boxes"></i></div>
+          <h3>Полные грузоперевозки</h3>
+          <p>Доставка полными машинами (10-20 тонн) без перегрузки</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-temperature-low"></i></div>
+          <h3>Рефрижераторные перевозки</h3>
+          <p>Температурные перевозки продуктов и других чувствительных грузов</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-warehouse"></i></div>
+          <h3>Складская логистика</h3>
+          <p>Ответственное хранение грузов на наших складах</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="section-title">О компании ООО "КЭП"</h2>
+        <p>Мы работаем на рынке грузоперевозок более 10 лет, обеспечивая надежную доставку ваших грузов по всей России.
+          Наш автопарк состоит из современных грузовых автомобилей различной грузоподъемности.</p>
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-text">лет опыта</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">150+</div>
+            <div class="stat-text">единиц техники</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5000+</div>
+            <div class="stat-text">довольных клиентов</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calculator" id="calculator">
+    <div class="container">
+      <h2 class="section-title">Калькулятор стоимости перевозки</h2>
+      <div class="calculator-form">
+        <div class="form-group">
+          <label for="from-city">Город отправления:</label>
+          <select id="from-city" class="form-control">
+            <option value="">Выберите город</option>
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Екатеринбург">Екатеринбург</option>
+            <option value="Новосибирск">Новосибирск</option>
+            <option value="Казань">Казань</option>
+            <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+            <option value="Краснодар">Краснодар</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="to-city">Город назначения:</label>
+          <select id="to-city" class="form-control">
+            <option value="">Выберите город</option>
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Екатеринбург">Екатеринбург</option>
+            <option value="Новосибирск">Новосибирск</option>
+            <option value="Казань">Казань</option>
+            <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+            <option value="Краснодар">Краснодар</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="weight">Вес груза (кг):</label>
+          <input type="number" id="weight" class="form-control" min="1" placeholder="Например: 500">
+        </div>
+        <div class="form-group">
+          <label for="volume">Объем (м³):</label>
+          <input type="number" id="volume" class="form-control" min="0.1" step="0.1" placeholder="Например: 3.5">
+        </div>
+        <button class="btn btn-primary" id="calculate-btn">Рассчитать стоимость</button>
+        <div class="calculation-result" id="calculation-result"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <div class="advantage-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Надежность</h3>
+          <p>Страхование груза и гарантированные сроки доставки</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon"><i class="fas fa-ruble-sign"></i></div>
+          <h3>Выгодные цены</h3>
+          <p>Гибкая система скидок для постоянных клиентов</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon"><i class="fas fa-clock"></i></div>
+          <h3>Соблюдение сроков</h3>
+          <p>98% грузов доставляются точно в срок</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon"><i class="fas fa-headset"></i></div>
+          <h3>Поддержка 24/7</h3>
+          <p>Круглосуточный контроль груза и поддержка клиентов</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Отзывы наших клиентов</h2>
+      <div class="testimonials-slider" id="testimonials-slider">
+        <div class="testimonial active">
+          <div class="testimonial-content">
+            <p>"Работаем с ООО "КЭП" уже 5 лет. Всегда пунктуальны, грузы приходят без повреждений. Рекомендую!"</p>
+            <div class="testimonial-author">
+              <div class="author-name">Иван Петров</div>
+              <div class="author-company">ООО "ТехноПром"</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Быстрая реакция на заявки, профессиональные водители. Цены соответствуют качеству услуг."</p>
+            <div class="testimonial-author">
+              <div class="author-name">Елена Смирнова</div>
+              <div class="author-company">ИП Смирнова</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Отправили оборудование в Новосибирск - доставили раньше срока, все в идеальном состоянии."</p>
+            <div class="testimonial-author">
+              <div class="author-name">Алексей Козлов</div>
+              <div class="author-company">ЗАО "ПромСнаб"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots"></div>
+        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacts">
+    <div class="container">
+      <h2 class="section-title">Свяжитесь с нами</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-text">г. Москва, ул. Логистическая, 15</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-text">8 (800) 123-45-67</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-text">info@kep-logistics.ru</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-text">Пн-Пт: 9:00 - 18:00</div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="feedback-form">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" class="form-control" placeholder="Ваш телефон" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" class="form-control" rows="4" placeholder="Сообщение"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>ООО "КЭП"</h3>
+          <p>Грузоперевозки по России</p>
+        </div>
+        <div class="footer-links">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#calculator">Калькулятор</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h4>Контакты</h4>
+          <p><i class="fas fa-phone"></i> 8 (800) 123-45-67</p>
+          <p><i class="fas fa-envelope"></i> info@kep-logistics.ru</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 ООО "КЭП". Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="order-modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h3>Заказать перевозку</h3>
+      <form id="order-form">
+        <div class="form-group">
+          <input type="text" id="order-name" class="form-control" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="order-phone" class="form-control" placeholder="Ваш телефон" required>
+        </div>
+        <div class="form-group">
+          <textarea id="order-details" class="form-control" rows="4"
+            placeholder="Детали груза (вес, объем, маршрут)"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
